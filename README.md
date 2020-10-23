@@ -63,7 +63,17 @@ datasets/\
 
 1. 修改配置文件config.txt中[train]部分的参数, 其中name用于命名本次实验, datasets用于指定本次实验所用的数据集.
 2. 运行训练脚本train.py. 训练之后, 中间结果, 模型文件和权重文件都将保存在./logs/$name$/目录之下.
+运行train.py时应该也是os.system那里报错，还会报错pydotplus.graphviz.InvocationException: GraphViz's executables not found，
+win10解决办法 
+1、下载安装GraphViz（这是一个独立软件）
+https://graphviz.gitlab.io/_pages/Download/Download_windows.html
+下载完后解压缩后，复制bin文件夹的路径。例如：
 
+将GraphViz安装目录的bin目录放到环境变量的path路径中
+windows下：
+不过我手工在环境变量中添加了bin路径不行，还是运行下边这个语句好。
+import os
+os.environ["PATH"] += os.pathsep + 'C:/Program Files (x86)/Graphviz2.38/bin/'  #注意修改你的路径
 ## 4 结果评估与可视化
 
 与训练部分相同, 结果评估包含2个步骤:
