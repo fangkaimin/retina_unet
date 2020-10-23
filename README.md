@@ -34,7 +34,7 @@ test num|20|8
 ### 1.2 数据集准备与预处理
 
 DRIVE和CHASEDB两个数据集的下载地址分别为:[DRIVE](https://pan.baidu.com/s/1M9k07LKul2c8gZBUzJ-TzA), w2cf; [CHAEDB](https://pan.baidu.com/s/1ZigFfnciLkQBd5AgMFWldg), 6tac. 数据集准备时, 首先从这两个网址下载数据集, 并将其分别解压到./datasets/路径下, 然后运行rewrite_datasets.py. 最终的结果如下所示, 其中h5py/路径下是重写的数据集(便于后续读取).
-
+数据我已经下载好放到了github,training.zip和test.zip放到DRIVE文件夹.还有CHASEDB.zip也已经上传。这两大文件夹放到datasets中。
 * 数据集结构\
 datasets/\
 ├── CHASEDB\
