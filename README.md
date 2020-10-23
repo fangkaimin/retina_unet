@@ -1,5 +1,5 @@
 # retina-unet
-这是我克隆的https://github.com/WILeroy/retina_unet的项目，我是新手，刚开始学习。
+这是我克隆的https://github.com/WILeroy/retina_unet  的项目，我是新手，刚开始学习。
 该项目的实现参考了[orobix/retina-unet](https://github.com/orobix/retina-unet), 本人仅对其部分代码进行了重构. 重构的目的是使项目可以基于tensorflow2运行, 并且增加代码的可读性. 项目共完成了以下几部分的内容:
 
 - [x] 视网膜图像预处理
